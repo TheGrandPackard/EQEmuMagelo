@@ -1,0 +1,833 @@
+.itembg {
+width:451px;
+background-image:url(../images/Itemshot.gif);
+text-align:left;
+}
+
+.itemtopbg {
+width:451px;
+height:18px;
+background-image:url(../images/Itemtop.gif);
+}
+
+.itembotbg {
+width:451px;
+height:10px;
+background-image:url(../images/Itembot.gif);
+}
+
+.itemtitle {
+font-family:Arial;
+font-size:12px;
+color:silver;
+text-align:center;
+width:100%;
+height:15px;
+}
+
+.itemdata {
+font-family:Arial;
+font-size:12px;
+color:#fff;
+width:100%;
+overflow:hidden;
+padding:7px;
+}
+
+.itemdata a {
+color:#0b0;
+}
+
+.hbdiv {
+display:inline-block;
+}
+
+.hbdiv span.hb {
+display:none;
+z-index:99;
+}
+
+.hbdiv:hover {
+position:relative;
+}
+
+.hbdiv:hover span.hb {
+display:block;
+position:absolute;
+top:20px;
+left:30px;
+}
+
+.magelohb span.hb {
+display:none;
+z-index:100;
+}
+
+.magelohb:hover span.hb {
+display:block;
+position:absolute;
+top:20px;
+left:30px;
+z-index:100;
+}
+
+#itemHoverContainer {
+position:absolute;
+left:0;
+top:0;
+display:none;
+z-index:1000;
+}
+
+.auctrackerbox {
+border:1px solid #b3c0cf;
+float:right;
+margin-bottom:10px;
+margin-left:15px;
+background:#fafaf6;
+padding:5px;
+}
+
+.contributionscores-wrapper {
+border:1px solid #bbb;
+padding:3px;
+}
+
+.StatTable {
+font-family:arial;
+font-size:9pt;
+color:#FFF;
+width:100%;
+text-align:inherit;
+vertical-align:top;
+border-collapse:collapse;
+display:block;
+background:none;
+margin:0;
+padding:0;
+}
+
+.Divider {
+background-color:#7b714a;
+width:100%;
+height:1px;
+border-collapse:collapse;
+margin:0;
+padding:0;
+}
+
+.Slot {
+height:40px;
+width:40px;
+border:0;
+position:absolute;
+margin:0;
+padding:0;
+}
+
+.Coin {
+height:25px;
+width:83px;
+border:0;
+text-align:center;
+background-image:url(../images/coin.gif);
+position:absolute;
+margin:0;
+padding:0;
+}
+
+.IventoryOuter {
+top:20px;
+position:relative;
+background-image:url(../images/light.gif);
+width:430px;
+height:435px;
+max-width:426px;
+max-height:431px;
+border:2px #7b714a solid;
+font-family:arial;
+font-size:9pt;
+color:#FFF;
+padding:0;
+}
+
+.InventoryInner {
+background-image:url(../images/light.gif);
+border:2px #40434e solid;
+position:absolute;
+top:13px;
+left:8px;
+width:412px;
+height:409px;
+max-width:408px;
+max-height:405px;
+font-family:arial;
+font-size:9pt;
+color:#FFF;
+padding:0;
+}
+
+.IventoryTitle {
+position:absolute;
+top:-11px;
+left:4px;
+border:0;
+width:418px;
+height:21px;
+font-family:arial;
+font-size:9pt;
+color:#FFF;
+padding:0;
+}
+
+.IventoryTitleLeft {
+background-image:url(../images/leftt.gif);
+position:absolute;
+top:0;
+left:0;
+width:14px;
+height:21px;
+border:0;
+padding:0;
+}
+
+.IventoryTitleMid {
+background-image:url(../images/midt.gif);
+position:absolute;
+text-align:center;
+line-height:21px;
+top:0;
+left:14px;
+width:390px;
+height:21px;
+border:0;
+padding:0;
+}
+
+.IventoryTitleRight {
+background-image:url(../images/rightt.gif);
+position:absolute;
+top:0;
+left:404px;
+width:14px;
+height:21px;
+border:0;
+padding:0;
+}
+
+.InventoryStats {
+height:370px;
+width:115px;
+position:absolute;
+top:14px;
+left:10px;
+background-image:url(../images/light.gif);
+margin:0;
+padding:0;
+}
+
+.InventoryStats tr td {
+padding-right:20px;
+margin:0;
+}
+
+.InventoryStats2 {
+height:100px;
+width:100px;
+position:absolute;
+top:14px;
+left:310px;
+display:block;
+margin:0;
+padding:0;
+}
+
+.InventoryMonogram {
+background-image:url(../images/dark.gif);
+border:1px #444 solid;
+position:absolute;
+text-align:center;
+top:57px;
+left:180px;
+width:82px;
+height:168px;
+max-height:168px;
+max-width:80px;
+font-family:arial;
+font-size:9pt;
+color:#FFF;
+padding:20px 0 0;
+}
+
+.slotloc1 {
+top:14px;
+left:137px;
+}
+
+.slotloc2 {
+top:14px;
+left:180px;
+}
+
+.slotloc3 {
+top:14px;
+left:223px;
+}
+
+.slotloc4 {
+top:14px;
+left:267px;
+}
+
+.slotloc17 {
+top:57px;
+left:137px;
+}
+
+.slotloc5 {
+top:57px;
+left:267px;
+}
+
+.slotloc7 {
+top:100px;
+left:137px;
+}
+
+.slotloc8 {
+top:100px;
+left:267px;
+}
+
+.slotloc20 {
+top:143px;
+left:137px;
+}
+
+.slotloc6 {
+top:143px;
+left:267px;
+}
+
+.slotloc9 {
+top:186px;
+left:137px;
+}
+
+.slotloc10 {
+top:186px;
+left:267px;
+}
+
+.slotloc18 {
+top:229px;
+left:137px;
+}
+
+.slotloc12 {
+top:229px;
+left:180px;
+}
+
+.slotloc0 {
+top:229px;
+left:223px;
+}
+
+.slotloc19 {
+top:229px;
+left:267px;
+}
+
+.slotloc15 {
+top:272px;
+left:180px;
+}
+
+.slotloc16 {
+top:272px;
+left:223px;
+}
+
+.slotloc13 {
+top:315px;
+left:137px;
+}
+
+.slotloc14 {
+top:315px;
+left:180px;
+}
+
+.slotloc11 {
+top:315px;
+left:223px;
+}
+
+.slotloc21 {
+top:315px;
+left:267px;
+}
+
+.slotloc22 {
+top:229px;
+left:317px;
+}
+
+.slotloc23 {
+top:272px;
+left:317px;
+}
+
+.slotloc24 {
+top:315px;
+left:317px;
+}
+
+.slotloc25 {
+top:358px;
+left:317px;
+}
+
+.slotloc26 {
+top:229px;
+left:360px;
+}
+
+.slotloc27 {
+top:272px;
+left:360px;
+}
+
+.slotloc28 {
+top:315px;
+left:360px;
+}
+
+.slotloc29 {
+top:358px;
+left:360px;
+}
+
+.slotloc2000 {
+top:20px;
+left:6px;
+}
+
+.slotloc2001 {
+top:63px;
+left:6px;
+}
+
+.slotloc2002 {
+top:106px;
+left:6px;
+}
+
+.slotloc2003 {
+top:148px;
+left:6px;
+}
+
+.slotloc2004 {
+top:20px;
+left:50px;
+}
+
+.slotloc2005 {
+top:63px;
+left:50px;
+}
+
+.slotloc2006 {
+top:106px;
+left:50px;
+}
+
+.slotloc2007 {
+top:148px;
+left:50px;
+}
+
+.slotloc2008 {
+top:20px;
+left:97px;
+}
+
+.slotloc2009 {
+top:63px;
+left:97px;
+}
+
+.slotloc2010 {
+top:106px;
+left:97px;
+}
+
+.slotloc2011 {
+top:148px;
+left:97px;
+}
+
+.slotloc2012 {
+top:20px;
+left:141px;
+}
+
+.slotloc2013 {
+top:63px;
+left:141px;
+}
+
+.slotloc2014 {
+top:106px;
+left:141px;
+}
+
+.slotloc2015 {
+top:148px;
+left:141px;
+}
+
+.slotimage0 {
+background-image:url(../images/slots/slot_0.gif);
+}
+
+.slotimage1 {
+background-image:url(../images/slots/slot_1.gif);
+}
+
+.slotimage2 {
+background-image:url(../images/slots/slot_2.gif);
+}
+
+.slotimage3 {
+background-image:url(../images/slots/slot_3.gif);
+}
+
+.slotimage4 {
+background-image:url(../images/slots/slot_4.gif);
+}
+
+.slotimage5 {
+background-image:url(../images/slots/slot_5.gif);
+}
+
+.slotimage6 {
+background-image:url(../images/slots/slot_6.gif);
+}
+
+.slotimage7 {
+background-image:url(../images/slots/slot_7.gif);
+}
+
+.slotimage8 {
+background-image:url(../images/slots/slot_8.gif);
+}
+
+.slotimage9 {
+background-image:url(../images/slots/slot_9.gif);
+}
+
+.slotimage10 {
+background-image:url(../images/slots/slot_10.gif);
+}
+
+.slotimage11 {
+background-image:url(../images/slots/slot_11.gif);
+}
+
+.slotimage12 {
+background-image:url(../images/slots/slot_12.gif);
+}
+
+.slotimage13 {
+background-image:url(../images/slots/slot_13.gif);
+}
+
+.slotimage14 {
+background-image:url(../images/slots/slot_14.gif);
+}
+
+.slotimage15 {
+background-image:url(../images/slots/slot_15.gif);
+}
+
+.slotimage16 {
+background-image:url(../images/slots/slot_16.gif);
+}
+
+.slotimage17 {
+background-image:url(../images/slots/slot_17.gif);
+}
+
+.slotimage18 {
+background-image:url(../images/slots/slot_18.gif);
+}
+
+.slotimage19 {
+background-image:url(../images/slots/slot_19.gif);
+}
+
+.slotimage20 {
+background-image:url(../images/slots/slot_20.gif);
+}
+
+.slotimage21 {
+background-image:url(../images/slots/slot_21.gif);
+}
+
+.slotimage {
+background-image:url(../images/slots/slot_.gif);
+}
+
+body.page-Main_Page h1.firstHeading {
+display:none;
+}
+
+.mainPageAnnounce {
+background:#eee;
+border:1px solid #aaa;
+margin:.5em auto;
+padding:.1em;
+}
+
+.mainPageOuterBox1 {
+width:55%;
+border:1px solid #cef2e0;
+background:#f5fffa;
+vertical-align:top;
+color:#000;
+margin:0;
+}
+
+.mainPageHeader1 {
+background:#cef2e0;
+font-size:120%;
+font-weight:700;
+border:1px solid #a3bfb1;
+text-align:center;
+color:#000;
+margin:0 3px;
+padding:.2em .4em;
+}
+
+.mainPageInnerBox1 {
+width:100%;
+vertical-align:top;
+background:#f5fffa;
+color:#000;
+}
+
+.mainPageOuterBox2 {
+width:45%;
+border:1px solid #cedff2;
+background:#f3f8fd;
+vertical-align:top;
+margin:0;
+}
+
+.mainPageInnerBox2 {
+width:100%;
+vertical-align:top;
+background:#f3f8fd;
+color:#000;
+}
+
+.mainPageHeader2 {
+background:#cedff2;
+font-size:120%;
+font-weight:700;
+border:1px solid #a3b0bf;
+text-align:left;
+color:#000;
+margin:0 3px;
+padding:.2em .4em;
+}
+
+.mainPageHeader3 {
+background:#f76;
+font-size:120%;
+font-weight:700;
+border:1px solid #ff4d4d;
+text-align:left;
+color:#000;
+margin:0 3px;
+padding:.2em .4em;
+}
+
+.eoTable {
+border:1px solid #eee;
+padding:4px;
+}
+
+.eoTable tr:nth-child(odd) {
+background-color:#f2f2f2;
+}
+
+.eoTable tr:nth-child(even) {
+background-color:#e2e2e2;
+}
+
+.eoTable th {
+text-align:left;
+background-color:#ccc;
+padding:4px;
+}
+
+.eoTable td {
+padding:1px 4px;
+}
+
+.eoTable2 {
+width:60%;
+border:1px solid #becff2;
+padding:4px;
+}
+
+.eoTable2 td {
+padding:2px 8px;
+}
+
+.eoTable3 {
+width:80%;
+border:1px solid #becff2;
+padding:2px;
+}
+
+.eoTable3 td {
+padding:1px 8px;
+}
+
+.zoneTopTable {
+border:1px solid #b3c0cf;
+padding:2px;
+}
+
+.zoneTopTable th {
+background:#cedff2;
+font-weight:400;
+padding:1px 6px;
+}
+
+.zoneTopTable td {
+padding:0 2px;
+}
+
+.raidMobTopTable {
+border:1px solid #a3b0bf;
+padding:4px;
+}
+
+.questTopTable {
+border:1px solid #b3c0cf;
+padding:4px;
+}
+
+.factionTable {
+width:auto;
+border:1px solid #becff2;
+padding:2px;
+}
+
+.factionTable th {
+text-align:left;
+background-color:#d3e4f4;
+border:1px solid #dfefff;
+font-size:150%;
+padding:3px 12px;
+}
+
+.factionTable td {
+vertical-align:top;
+padding:1px 8px;
+}
+
+.factionTable .fmz {
+padding-left:1em;
+padding-right:1em;
+color:#ddd;
+}
+
+.esec {
+color:#bbb;
+list-style:none;
+}
+
+.profac {
+color:#700;
+}
+
+.oppfac {
+color:#070;
+}
+
+.drare {
+color:#555;
+}
+
+.ddb {
+color:#ddd;
+}
+
+.ddp {
+color:#f8f8f8;
+}
+
+.mobPageDiv {
+margin:0 20px 10px 234px;
+padding:0;
+}
+
+.mobPageDiv ul {
+margin-left:.8em;
+padding-left:.8em;
+}
+
+.mobStatsBox {
+border:1px solid #becfe2;
+float:left;
+width:220px;
+margin:0 5px 5px 0;
+}
+
+.facblock {
+background:#e0e5fd;
+display:inline-block;
+padding:3px 10px;
+}
+
+div.floatright {
+float:right;
+clear:right;
+position:relative;
+margin:.5em 1em .8em 1.4em;
+}
+
+.grayout,.grayout a,.grayout a.new,.grayout h3,.grayout h2,.grayout h1 {
+color:#bbb;
+}
+
+.eoTable2 tr:nth-child(odd),.eoTable3 tr:nth-child(odd) {
+background-color:#f2f2fa;
+}
+
+.eoTable2 tr:nth-child(even),.eoTable3 tr:nth-child(even) {
+background-color:#e2e2fa;
+}
+
+.eoTable2 th,.eoTable3 th {
+text-align:left;
+background-color:#cedff2;
+padding:2px 8px;
+}
+
+.raidMobTopTable th,.questTopTable th {
+background:#cedff2;
+font-weight:400;
+padding:3px 10px;
+}
+
+.raidMobTopTable td,.questTopTable td {
+padding:3px 6px;
+}
