@@ -1,10 +1,8 @@
 <?
 
-// TODO: AC, ATK, Resists, Weight
+// TODO: AC, ATK, Bag Item Weight
 // TODO: EXPENDABLE (Vibrating Gauntlets of Infuse)
 // TODO: Item Deity
-
-// TODO: Add item stats to player stats from inventory
 
 // Functionality that did NOT exist with Magelo
 // TODO: Stack Count for stackable items
@@ -353,21 +351,24 @@
 	
 	function raceNameFromID($raceID)
 	{
-		global $db;
-	
-		$query = "SELECT name FROM peq.races WHERE id = $raceID;";	
-		$result = $db->query($query);
-		
-		if($result)
+		switch($raceID)
 		{
-			$race = $result->fetch_assoc();
-			
-			return $race['name'];
+			case 1: return "Human";
+                        case 2: return "Barbarian";
+                        case 3: return "Erudite";
+                        case 4: return "Wood Elf";
+                        case 5: return "High Elf";
+                        case 6: return "Dark Elf";
+                        case 7: return "Half-Elf";
+                        case 8: return "Dwarf";
+                        case 9: return "Troll";
+                        case 10: return "Ogre";
+                        case 11: return "Halfling";
+                        case 12: return "Gnome";
+			case 128: return "Iksar";
+			case 130: return "Vah Shir";
+			default: return "UNKNOWN";	
 		}
-		else
-		{
-			return "UNKNOWN";
-		}		
 	}
 	
 	function deityNameFromID($deityID)

@@ -87,22 +87,22 @@
    						<tr><td class="Divider" colspan="2"></td></tr>
    						<tr>
    							<td>STR<br>STA<br>AGI<br>DEX</td>
-   							<td width="100%"><?= $character->str ?><br><?= $character->sta ?><br><?= $character->agi ?><br><?= $character->dex ?></td>
+   							<td width="100%"><?= $character->display('str') ?><br><?= $character->display('sta') ?><br><?= $character->display('agi') ?><br><?= $character->display('dex') ?></td>
    						</tr>
    						<tr><td class="Divider" colspan="2"></td></tr>
    						<tr>
    							<td>WIS<br>INT<br>CHA</td>
-   							<td width="100%"><?= $character->wis ?><br><?= $character->int ?><br><?= $character->cha ?></td>
+							<td width="100%"><?= $character->display('wis') ?><br><?= $character->display('int') ?><br><?= $character->display('cha') ?></td>
    						</tr>
    						<tr><td class="Divider" colspan="2"></td></tr>
    						<tr>
    							<td>POISON<br>MAGIC<br>DISEASE<br>FIRE<br>COLD</td>
-   							<td><?= $character->pr ?><br><?= $character->mr ?><br><?= $character->dr ?><br><?= $character->fr ?><br><?= $character->cr ?></td>
+   							<td><?= $character->display('pr') ?><br><?= $character->display('mr') ?><br><?= $character->display('dr') ?><br><?= $character->display('fr') ?><br><?= $character->display('cr') ?></td>
    						</tr>
    						<tr><td class="Divider" colspan="2"></td></tr>
    						<tr>
    							<td>WEIGHT</td>
-   							<td><?= $character->weight ?>/<?= $character->str ?></td>
+   							<td><?= number_format($character->weight, 0) ?>/<?= $character->str ?></td>
    						</tr>
    					</tbody>
 				</table>
