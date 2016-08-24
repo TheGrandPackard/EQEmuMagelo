@@ -244,9 +244,9 @@ WHERE charid = " . $this->id . ";";
 			case 'fr':
 			case 'cr':
 				if($this->$stat > $this->{"start_$stat"})
-					return "<span style='color:#DEE910'>" . ($this->$stat < 256 ? $this->$stat : 255) . "</span>";
+					return "<span style='color:#00FF00'>" . ($this->$stat < 256 ? $this->$stat : 255) . "</span>";
 				if($this->$stat < $this->{"start_" .$stat})
-					return "<span style='color:#D20000'>" . ($this->$stat < 256 ? $this->$stat : 255) . "</span>";
+					return "<span style='color:#FF0000'>" . ($this->$stat < 256 ? $this->$stat : 255) . "</span>";
 				return "<span>" . ($this->$stat < 256 ? $this->$stat : 255) . "</span>";
 			default:
 				return $this->$stat;

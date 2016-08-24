@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
 
     <title>PEQ Editor</title>
 	
@@ -14,9 +13,9 @@
     <link href="css/peqeditor.css" rel="stylesheet">
     <link href="extensions/Magelo/stylesheets/character.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
   <style type="text/css"></style><style id="holderjs-style" type="text/css"></style>
 </head>
 	
